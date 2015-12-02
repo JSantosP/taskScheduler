@@ -15,4 +15,7 @@ trait TaskNode {
    * to execute this node's task.
    */
   val dependencies: Seq[Dependency]
+
+  override def toString(): String =
+    s"TaskNode($task,dependsOn(${if (dependencies.isEmpty) "-" else dependencies.mkString(",")}))"
 }

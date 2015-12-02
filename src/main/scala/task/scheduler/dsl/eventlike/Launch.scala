@@ -1,6 +1,6 @@
-package task.scheduler.dsl
+package task.scheduler.dsl.eventlike
 
-import task.scheduler.{TaskNode, Task}
+import task.scheduler.{Task, TaskNode}
 
 /**
  * Just create a [[TaskNode]] without dependencies.

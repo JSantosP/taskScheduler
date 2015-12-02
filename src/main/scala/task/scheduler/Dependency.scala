@@ -2,7 +2,10 @@ package task.scheduler
 
 case class Dependency(
                        taskNode: TaskNode,
-                       dependencyType: Dependency.Type)
+                       dependencyType: Dependency.Type) {
+  override def toString(): String =
+  s"$dependencyType at $taskNode"
+}
 
 object Dependency {
 

@@ -13,6 +13,6 @@ trait Task[-Input, +Output] {
 
   val id: UUID = UUID.randomUUID()
 
-  def perform(input: Input): Output
+  def perform(input: Input)(implicit ctx: TaskContext): Output
 
 }

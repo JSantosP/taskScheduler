@@ -1,4 +1,4 @@
-package task.scheduler.dsl
+package task.scheduler.dsl.eventlike
 
 import task.scheduler._
 
